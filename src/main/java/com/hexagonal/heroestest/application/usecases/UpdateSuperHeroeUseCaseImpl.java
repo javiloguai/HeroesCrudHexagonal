@@ -4,12 +4,14 @@ import com.hexagonal.heroestest.domain.enums.SuperPower;
 import com.hexagonal.heroestest.domain.models.SuperHeroDomain;
 import com.hexagonal.heroestest.domain.ports.in.UpdateSuperHeroeUseCase;
 import com.hexagonal.heroestest.domain.ports.out.SuperHeroRepositoryPort;
+import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
 /**
  * @author jruizh
  */
+@Component
 public class UpdateSuperHeroeUseCaseImpl implements UpdateSuperHeroeUseCase {
 
     private final SuperHeroRepositoryPort superHeroRepositoryPort;

@@ -3,7 +3,6 @@ package com.hexagonal.heroestest.domain.ports.in;
 import com.hexagonal.heroestest.domain.models.SuperHeroDomain;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
@@ -11,7 +10,7 @@ import java.util.Optional;
 /**
  * @author jruizh
  */
-@Component
+
 public interface GetSuperHeroesUseCase {
 
     List<SuperHeroDomain> getAllSuperHeroes();

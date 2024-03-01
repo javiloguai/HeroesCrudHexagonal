@@ -3,12 +3,14 @@ package com.hexagonal.heroestest.application.usecases;
 import com.hexagonal.heroestest.domain.models.SuperPowerDomain;
 import com.hexagonal.heroestest.domain.ports.in.CreateSuperPowerUseCase;
 import com.hexagonal.heroestest.domain.ports.out.SuperPowerRepositoryPort;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 /**
  * @author jruizh
  */
+@Component
 public class CreateSuperPowerUseCaseImpl implements CreateSuperPowerUseCase {
 
     private final SuperPowerRepositoryPort superPowerRepositoryPort;

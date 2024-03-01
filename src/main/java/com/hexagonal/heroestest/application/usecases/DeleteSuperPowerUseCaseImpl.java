@@ -2,10 +2,12 @@ package com.hexagonal.heroestest.application.usecases;
 
 import com.hexagonal.heroestest.domain.ports.in.DeleteSuperPowerUseCase;
 import com.hexagonal.heroestest.domain.ports.out.SuperPowerRepositoryPort;
+import org.springframework.stereotype.Component;
 
 /**
  * @author jruizh
  */
+@Component
 public class DeleteSuperPowerUseCaseImpl implements DeleteSuperPowerUseCase {
 
     private final SuperPowerRepositoryPort superPowerRepositoryPort;

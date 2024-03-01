@@ -3,10 +3,12 @@ package com.hexagonal.heroestest.application.usecases;
 import com.hexagonal.heroestest.domain.models.SuperHeroDomain;
 import com.hexagonal.heroestest.domain.ports.in.CreateSuperHeroUseCase;
 import com.hexagonal.heroestest.domain.ports.out.SuperHeroRepositoryPort;
+import org.springframework.stereotype.Component;
 
 /**
  * @author jruizh
  */
+@Component
 public class CreateSuperHeroUseCaseImpl implements CreateSuperHeroUseCase {
 
     private final SuperHeroRepositoryPort superHeroRepositoryPort;

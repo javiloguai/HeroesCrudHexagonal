@@ -17,7 +17,7 @@ public class TimeExecutionLogger {
 
     private static final Logger LOGGER = LogManager.getLogger(TimeExecutionLogger.class);
 
-    @Around("@annotation(com.w2m.heroestest.config.aspects.annotations.LogExecutionTime)")
+    @Around("@annotation(com.hexagonal.heroestest.infraestructure.config.aspects.annotations.LogExecutionTime)")
     public Object logExecutionTime(ProceedingJoinPoint point) throws Throwable {
         long start = System.currentTimeMillis();
         Object o = point.proceed();

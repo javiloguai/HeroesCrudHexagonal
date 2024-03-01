@@ -10,7 +10,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  */
 @SpringBootApplication
 @EnableCaching
-//@EnableScheduling
 @EnableJpaRepositories
 public class HeroesTestApplication {
 

@@ -5,6 +5,7 @@ import com.hexagonal.heroestest.domain.ports.in.GetSuperHeroesUseCase;
 import com.hexagonal.heroestest.domain.ports.out.SuperHeroRepositoryPort;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,6 +13,7 @@ import java.util.Optional;
 /**
  * @author jruizh
  */
+@Component
 public class GetSuperHeroesUseCaseImpl implements GetSuperHeroesUseCase {
 
     private final SuperHeroRepositoryPort superHeroRepositoryPort;
